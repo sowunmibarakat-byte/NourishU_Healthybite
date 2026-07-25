@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NourishU_HealthyBite | By Sowunmi Barakat Adeshewa - Registered Nutritionist</title>
+  <meta name="description" content="Personalized Nutrition Plans by Sowunmi Barakat Adeshewa. Diabetes, High BP, Ulcer, Weight. Book Consult for ₦30,000">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif}
+    body{background:#fffaf5;color:#333;line-height:1.8;scroll-behavior:smooth}
+    header{background:linear-gradient(135deg,#E91E63 0%,#2E7D32 100%);color:white;padding:35px 20px;text-align:center;position:sticky;top:0;z-index:999;box-shadow:0 4px 15px rgba(0,0,0,0.2)}
+    .logo { width: 130px; height: 130px; border-radius: 50%; border: 5px solid white; margin-bottom: 15px; object-fit: cover; background:white; box-shadow:0 4px 10px rgba(0,0,0,0.2)}
+    header h1{font-size:2.6rem;margin-bottom:5px;letter-spacing:1px} 
+    header h2{font-size:1.1rem;font-weight:400;opacity:0.95;margin-bottom:10px}
+    .name { font-size: 1.2rem; font-weight: bold; background: rgba(255,255,255,0.3); display: inline-block; padding: 10px 20px; border-radius: 30px; }
+    nav{margin-top:20px} 
+    nav a{color:white;margin:0 8px;text-decoration:none;font-weight:bold;background:rgba(255,255,255,0.25);padding:11px 16px;border-radius:10px;font-size:15px;transition:0.3s;display:inline-block;margin-bottom:8px}
+    nav a:hover{background:rgba(255,255,255,0.45);transform:translateY(-2px)}
+    .container{max-width:980px;margin:40px auto;padding:0 20px}
+    .hero{background:white;padding:30px;border-radius:16px;margin-bottom:30px;text-align:center;box-shadow:0 5px 20px rgba(233,30,99,0.1)}
+    .hero h3{color:#E91E63;font-size:1.6rem;margin-bottom:10px}
+    .search-box{background:white;padding:30px;border-radius:16px;margin-bottom:30px;box-shadow:0 4px 15px rgba(0,0,0,0.08)}
+    .search-box h3{color:#4A148C;margin-bottom:15px;font-size:1.4rem}
+    .search-box input{width:100%;padding:16px;border:2px solid #2E7D32;border-radius:12px;font-size:16px}
+    .quick-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin-bottom:40px}
+    .link-card{background:linear-gradient(135deg,#fff 0%,#ffeef3 100%);padding:25px;border-radius:15px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.08);cursor:pointer;font-weight:bold;color:#E91E63;border:2px solid #E91E63;transition:0.3s;font-size:17px}
+    .link-card:hover{background:#E91E63;color:white;transform:translateY(-4px)}
+    .section{background:white;padding:45px;border-radius:16px;margin:40px 0;box-shadow:0 5px 20px rgba(0,0,0,0.08)}
+    h2{color:#4A148C;font-size:2rem;border-bottom:4px solid #FF6F00;padding-bottom:12px;margin-bottom:20px}
+    h3 {color:#2E7D32;margin:25px 0 15px;font-size:1.4rem}
+    ul {margin-left:30px;margin-bottom:20px}
+    li{margin-bottom:10px;font-size:16px}
+    .tip-box{background:#e8f5e9;border-left:5px solid #2E7D32;padding:15px;margin:15px 0;border-radius:8px}
+    .booking{background:linear-gradient(135deg,#FF6F00 0%,#FF8F00 100%);color:white;padding:40px;border-radius:16px;text-align:center;margin-top:30px}
+    .booking h3{color:white;font-size:1.7rem;margin-bottom:12px}
+    .btn{display:inline-block;padding:20px 40px;background:white;color:#FF6F00;text-decoration:none;border:none;border-radius:12px;font-weight:bold;font-size:18px;cursor:pointer;margin-top:15px;transition:0.3s;box-shadow:0 4px 10px rgba(0,0,0,0.2)}
+    .btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,0.3)}
+    footer{text-align:center;padding:35px;background:#4A148C;color:white;margin-top:70px;font-size:15px}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="NourishU_HealthyBite Logo" class="logo">
+    <h1>NourishU_HealthyBite</h1>
+    <h2>Personalized Nutrition for a Healthier You</h2>
+    <div class="name">By Sowunmi Barakat Adeshewa</div>
+    <nav>
+      <a href="#diabetes">Diabetes</a>
+      <a href="#bp">High BP</a>
+      <a href="#ulcer">Ulcer</a>
+      <a href="#weight">Weight</a>
+      <a href="#others">Others</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    
+    <div class="hero">
+      <h3>💚 Welcome to NourishU_HealthyBite</h3>
+      <p>Hi, I’m <b>Sowunmi Barakat Adeshewa</b>, your Registered Nutritionist. I create meal plans with Nigerian foods/continental dishes you love, that heal your body and fit your lifestyle. No strict diets. Just healthy, tasty eating.</p>
+    </div>
+
+    <div class="search-box">
+      <h3>🔍 Find Your Health Solution</h3>
+      <input type="text" id="searchInput" placeholder="Type: Diabetes, High Blood Pressure, Ulcer, Anemia, PCOS, Weight...">
+    </div>
+    
+    <div class="quick-links">
+      <div class="link-card" onclick="document.getElementById('diabetes').scrollIntoView({behavior:'smooth'})">🩸 Diabetes</div>
+      <div class="link-card" onclick="document.getElementById('bp').scrollIntoView({behavior:'smooth'})">❤️ High Blood Pressure</div>
+      <div class="link-card" onclick="document.getElementById('ulcer').scrollIntoView({behavior:'smooth'})">🔥 Ulcer</div>
+      <div class="link-card" onclick="document.getElementById('weight').scrollIntoView({behavior:'smooth'})">⚖️ Weight Goals</div>
+      <div class="link-card" onclick="document.getElementById('others').scrollIntoView({behavior:'smooth'})">🩺 Other Conditions</div>
+    </div>
+    
+    <!-- DIABETES - DETAILED -->
+    <section id="diabetes" class="section">
+      <h2>Managing Diabetes the Nigerian Way</h2>
+      <p>Living with diabetes doesn’t mean you can’t enjoy Nigerian food. The key is choosing <b>low GI foods</b>, controlling portions, and eating on time. This helps prevent blood sugar spikes and keeps your energy stable.</p>
+      
+      <h3>✅ FOODS TO EAT REGULARLY</h3>
+      <ul>
+        <li><b>Vegetables:</b> Ugu, Efo, Okra, Bitterleaf, Cabbage. Eat plenty! They have fiber that slows sugar absorption.</li>
+        <li><b>Protein:</b> Fish, Chicken breast, Eggs, Beans, Tofu. Protein keeps you full and balances blood sugar.</li>
+        <li><b>Low GI Carbs:</b> Oats, Brown rice, Sweet potato, Unripe plantain, Yam. These release sugar slowly.</li>
+        <li><b>Healthy Fats:</b> Avocado, Groundnuts, Almonds. They help with insulin function.</li>
+        <li><b>Drinks:</b> Water, Unsweetened tea, Zobo without sugar.</li>
+      </ul>
+
+      <div class="tip-box">
+        <b>💡 Pro Tip:</b> Use the "Plate Method". 1/2 plate vegetables, 1/4 plate protein, 1/4 plate carbs. This works for Jollof rice too!
+      </div>
+
+      <h3>❌ FOODS TO LIMIT OR AVOID</h3>
+      <ul>
+        <li><b>Sugary drinks:</b> Coke, Fanta, Malt, Packaged juice. They spike blood sugar fast.</li>
+        <li><b>Refined carbs:</b> White bread, White rice, Indomie. Replace with brown or whole grain versions.</li>
+        <li><b>Processed snacks:</b> Biscuits, Cakes, Meat pie. High in sugar and bad fats.</li>
+        <li><b>Alcohol:</b> Can cause dangerous blood sugar drops.</li>
+      </ul>
+
+      <div class="booking">
+        <h3>Book Your Diabetes Consult</h3>
+        <p>Get a 4-week personalized meal plan using foods you love + 24/7 WhatsApp Support + Grocery List + Portion Guide</p>
+        <p><b>Investment: ₦30,000</b></p>
+        <button class="btn" onclick="payWithPaystack('Diabetes Consult')">Book Consult Now - ₦30,000</button>
+      </div>
+    </section>
+    
+    <!-- HIGH BP - DETAILED -->
+    <section id="bp" class="section">
+      <h2>Managing High Blood Pressure Naturally</h2>
+      <p>High BP is called the "silent killer" but food can be your medicine. The DASH diet works perfectly with Nigerian foods. We’ll reduce sodium, increase potassium, and protect your heart.</p>
+      
+      <h3>✅ FOODS TO EAT REGULARLY</h3>
+      <ul>
+        <li><b>Potassium-Rich Fruits:</b> Banana, Orange, Pawpaw, Watermelon, Avocado. Potassium helps lower BP.</li>
+        <li><b>Leafy Greens:</b> Spinach, Ugu, Garden egg leaf. Packed with magnesium.</li>
+        <li><b>Whole grains:</b> Oats, Brown rice, Millet. High in fiber.</li>
+        <li><b>Lean Protein:</b> Fish, Skinless chicken, Beans. Avoid fatty meats.</li>
+        <li><b>Nuts & Seeds:</b> Groundnuts, Almonds. Good for heart health.</li>
+      </ul>
+
+      <div class="tip-box">
+        <b>💡 Pro Tip:</b> Cook with fresh pepper, ginger, garlic and herbs instead of Maggi. Your food will taste better and be healthier!
+      </div>
+
+      <h3>❌ FOODS TO LIMIT OR AVOID</h3>
+      <ul>
+        <li><b>Too much salt:</b> Maggi, Seasoning cubes, Stock cubes. Use natural spices instead.</li>
+        <li><b>Processed meat:</b> Sausage, Hotdog, Titus fish in brine, Corned beef. Very high in sodium.</li>
+        <li><b>Canned foods:</b> Beans, Tomatoes. Rinse well if you must use.</li>
+        <li><b>Alcohol & Excess caffeine:</b> Can raise blood pressure.</li>
+      </ul>
+
+      <div class="booking">
+        <h3>Book Your BP Consult</h3>
+        <p>Get a low-sodium meal plan + 24/7 WhatsApp Support + Meal Timing Guide + BP Tracking Sheet</p>
+        <p><b>Investment: ₦30,000</b></p>
+        <button class="btn" onclick="payWithPaystack('BP Consult')">Book Consult Now - ₦30,000</button>
+      </div>
+    </section>
+    
+    <!-- ULCER - DETAILED -->
+    <section id="ulcer" class="section">
+      <h2>Healing Ulcer with Food</h2>
+      <p>Ulcer pain is terrible, but the right foods can sooth your stomach lining and help you heal. The goal is to avoid irritants and eat on a consistent schedule.</p>
+      
+      <h3>✅ FOODS TO EAT REGULARLY</h3>
+      <ul>
+        <li><b>Gut Soothers:</b> Oatmeal, Plantain, Potatoes, Yam, Fufu. Gentle on the stomach.</li>
+        <li><b>Lean Protein:</b> Fish, Chicken breast, Eggs, Beans. Helps repair tissue.</li>
+        <li><b>Low-Acid Fruits:</b> Banana, Pawpaw, Watermelon. Avoid citrus.</li>
+        <li><b>Vegetables:</b> Carrot, Cabbage, Cucumber, Ugu. Cooked is better.</li>
+        <li><b>Probiotics:</b> Plain yoghurt, Nunu. Good bacteria for gut health.</li>
+      </ul>
+
+      <div class="tip-box">
+        <b>💡 Pro Tip:</b> Eat small meals 4-5 times daily. Never sleep on an empty stomach. Have a banana before bed.
+      </div>
+
+      <h3>❌ FOODS TO LIMIT OR AVOID</h3>
+      <ul>
+        <li><b>Spicy food:</b> Pepper soup, Hot sauce, Excess pepper. Major irritant.</li>
+        <li><b>Acidic foods:</b> Orange juice, Lemon, Excess tomato paste.</li>
+        <li><b>Irritants:</b> Coffee, Alcohol, Carbonated drinks, Fried foods.</li>
+        <li><b>Skipping meals:</b> This increases stomach acid and pain.</li>
+      </ul>
+
+      <div class="booking">
+        <h3>Book Your Ulcer Consult</h3>
+        <p>Get a gut-friendly meal plan + 24/7 WhatsApp Support + Meal Schedule + Foods to Sooth Pain</p>
+        <p><b>Investment: ₦30,000</b></p>
+        <button class="btn" onclick="payWithPaystack('Ulcer Consult')">Book Consult Now - ₦30,000</button>
+      </div>
+    </section>
+    
+    <!-- WEIGHT - DETAILED -->
+    <section id="weight" class="section">
+      <h2>Weight Loss & Weight Gain Plans</h2>
+      
+      <h3>For Healthy Weight Loss</h3>
+      <p>Lose weight without starving. We focus on high-protein, high-fiber Nigerian meals that keep you full. No crash diets.</p>
+      <ul>
+        <li><b>Eat:</b> Vegetables, Lean protein, Water, High fiber foods, Soups with less oil</li>
+        <li><b>Avoid:</b> Soft drinks, Fried foods, Alcohol, Late night eating, Huge portions</li>
+      </ul>
+
+      <h3>For Healthy Weight Gain</h3>
+      <p>Gain weight the right way - with muscle and nutrients, not just fat. We add healthy calories to your favorite foods.</p>
+      <ul>
+        <li><b>Eat:</b> Smoothies, Avocado, Nuts, Beans, Rice, Healthy oils, Milk, Groundnuts</li>
+        <li><b>Strategy:</b> Add an extra snack and increase portion sizes gradually</li>
+      </ul>
+      
+      <div class="booking">
+        <h3>Book Your Weight Management Consult</h3>
+        <p>Get custom calorie plan + 24/7 WhatsApp Support + Workout Tips + Progress Tracking</p>
+        <p><b>Investment: ₦30,000</b></p>
+        <button class="btn" onclick="payWithPaystack('Weight Consult')">Book Consult Now - ₦30,000</button>
+      </div>
+    </section>
+    
+    <!-- OTHERS - DETAILED -->
+    <section id="others" class="section">
+      <h2>Other Conditions I Help With</h2>
+      
+      <h3>Anemia / Low Blood</h3>
+      <p>Boost your iron naturally. <b>Eat:</b> Spinach, Ugu, Liver, Beans, Beetroot + Vitamin C foods like Orange to help absorption. <b>Avoid:</b> Tea and Coffee with meals.</p>
+
+      <h3>PCOS</h3>
+      <p>Balance hormones with food. <b>Eat:</b> Low GI carbs, High protein, Ginger, Turmeric, Leafy greens. <b>Avoid:</b> Sugar, Dairy, Processed food.</p>
+
+      <h3>Malnutrition & Thyroid</h3>
+      <p>For malnutrition: Nutrient-dense foods, Nuts, Fish, Eggs. For Thyroid: Seafood, Eggs, Nuts, Seeds. Avoid raw cabbage in excess.</p>
+      
+      <div class="booking">
+        <h3>Book Your Custom Consult</h3>
+        <p>Have another condition? I’ll create a personalized plan just for you + 24/7 WhatsApp Support</p>
+        <p><b>Investment: ₦30,000</b></p>
+        <button class="btn" onclick="payWithPaystack('Custom Consult')">Book Consult Now - ₦30,000</button>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2026 NourishU_HealthyBite</p>
+    <p>By Sowunmi Barakat Adeshewa | Registered Nutritionist</p>
+    <p>WhatsApp: 07025530085 | Lagos, Nigeria</p>
+  </footer>
+  
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <script>
+    function payWithPaystack(planName){
+      var email = prompt("Enter your email address for your receipt and meal plan:");
+      if(email == null || email == "") return;
+      PaystackPop.setup({
+        key: 'pk_test_YOUR_PAYSTACK_PUBLIC_KEY', 
+        email: email, amount: 3000000, currency: "NGN", ref: 'NUHB_' + Date.now(),
+        callback: function(response){
+          alert('Payment Successful! \nRef: ' + response.reference + '\n\nI will contact you on WhatsApp within 5 minutes.');
+          window.open('https://wa.me/2347025530085?text=Hello%20Ms%20Barakat%20I%20just%20booked%20' + planName + '%20%0AReference:%20' + response.reference, '_blank');
+        }
+      }).openIframe();
+    }
+    document.getElementById('searchInput').addEventListener('keyup', function(){
+      let val = this.value.toLowerCase();
+      if(val.includes('diabetes')) document.getElementById('diabetes').scrollIntoView({behavior:'smooth'});
+      if(val.includes('bp') || val.includes('blood')) document.getElementById('bp').scrollIntoView({behavior:'smooth'});
+      if(val.includes('ulcer')) document.getElementById('ulcer').scrollIntoView({behavior:'smooth'});
+      if(val.includes('weight')) document.getElementById('weight').scrollIntoView({behavior:'smooth'});
+      if(val.includes('anemia') || val.includes('pcos')) document.getElementById('others').scrollIntoView({behavior:'smooth'});
+    });
+  </script>
+</body >
+</html>
